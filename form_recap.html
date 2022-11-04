@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            padding: 10px;
+        }
+        .two td:nth-child(even){
+            background-color: rgb(185, 180, 180);
+        }
+      
+    </style>
+</head>
+<body>
+    <p style="text-align: left;color: rgb(208, 212, 216);"><b>SIMPLE VENDORE APPLICATION</b></p><br>
+    <p><b>Company Name</b></p>
+    <p style="text-align: right;font-size:40px;color:rgb(132, 117, 117);"><b>YOUR LOGO</b></p>
+    <div>Address line 1</div>
+    <div>Address line 2</div>
+    <div>Phone|Fax</div>
+    <div>email</div>
+    <p style="text-align: right; font-size: 35px;"><b>VENDORE APPLICATION FORM</b></p><hr>
+    <p style="font-size: 20px;">VENDORE INFORMATION</p>
+    <form>
+        <table width="100%" style="border-collapse:collapse;" border="1">
+            <tr style="background-color: rgb(178, 171, 171);">
+                <td colspan="3">Company name/firm name</td>
+                <td >vendore id</td>
+            </tr>
+            <tr>
+                <td colspan="3"> <input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr style="background-color: rgb(178, 171, 171);">
+                <td colspan="3">Alternate Name</td>
+                <td>Tax id no</td>
+            </tr>
+            <tr>
+                <td colspan="3"><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr style="background-color: rgb(178, 171, 171);">
+                <td colspan="2" >point of contact name</td>
+                <td colspan="2">Title</td>
+            </tr>
+            <tr>
+                <td colspan="2" ><input type="text"></td>
+                <td colspan="2"><input type="text"></td>
+            </tr>
+            <tr style="background-color: rgb(178, 171, 171);">
+                <td colspan="4">Vendore Address</td>
+            </tr>
+            <tr>
+                <td colspan="4"><input type="text"></td>
+            </tr>
+            <tr style="background-color: rgb(178, 171, 171);">
+                <td colspan="4">Payment Address</td>
+            </tr> 
+            <tr>
+                <td colspan="4"><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>Fax</td>
+                <td colspan="2">Vendore Email</td>
+            </tr>
+            <tr style="background-color: rgb(178, 171, 171);">
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td colspan="2"><input type="text"></td>
+            </tr>
+            <tr >
+                <td>Tax Exempt</td>
+                <td colspan="3">Vendore Website</td>
+            </tr>
+            <tr style="background-color: rgb(178, 171, 171);">
+                <td><input type="text"></td>
+                <td colspan="3"><input type="text" ></td>
+            </tr>
+
+        </table><br><br>
+        <table width="100%" style="border-collapse:collapse;" border="1" class="two">
+            <caption style="text-align:left;font-size:25px;">ORGANIZATION TYPE</caption>
+            <tr>
+                <td width="10px"><input type="checkbox"></td>
+                <td>Corporation</td>
+                <td width="10px"><input type="checkbox"></td>
+                <td>hello</td>
+                <td width="10px"><input type="checkbox"></td>
+                <td>hello</td>
+            </tr>
+            <tr>
+                <td width="10px"><input type="checkbox"></td>
+                <td>hello</td>
+                <td width="10px"><input type="checkbox"></td>
+                <td>hello</td>
+                <td width="10px"><input type="checkbox"></td>
+                <td>hello</td>
+            </tr>
+        </table>
+        <br><br>
+        <div style="display: flex;justify-content:space-around">
+
+
+            <table style="border-collapse:collapse; width: 25%;" border="1">
+                <caption style="text-align:left;">separate cheque</caption>
+                <tr>
+                    <td width="10px"><input type="checkbox"></td>
+                    <td style="background-color: rgb(178, 171, 171);">Yes</td>
+                </tr>
+                <tr>
+                    <td width="10px"><input type="checkbox"></td>
+                    <td style="background-color: rgb(178, 171, 171);">No</td>
+                </tr>
+            </table >
+
+
+            <table style="border-collapse:collapse;width: 25%;" border="1">
+                <caption style="text-align:left;">accept purchasing cards</caption>
+                <tr>
+                    <td width="10px"><input type="checkbox"></td>
+                    <td style="background-color: rgb(178, 171, 171);">Yes</td>
+                </tr>
+                <tr>
+                    <td width="10px"><input type="checkbox"></td>
+                    <td style="background-color: rgb(178, 171, 171);">No</td>
+                </tr>
+            </table >
+
+
+            <table style="border-collapse:collapse;width: 25%" border="1">
+                <caption style="text-align:left;">banking information</caption>
+                <tr>
+                    <td width="70px">Account</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td width="70px">Routing</td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+
+            
+        </div><br><br>
+        <table border="1" style="border-collapse:collapse;width:100%">
+            <tr style="background-color: rgb(225, 216, 216);">
+                <td>Requestor/ Vendore Name</td>
+                <td>Signature</td>
+                <td>Date requested/sent</td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+        </table><br><br>
+        <table border="1" style="border-collapse:collapse;width:100%">
+          <tr style="background-color: rgb(225, 216, 216);">
+            <td rowspan="2"><label>Internal Use Only</label></td>
+            <td>VENDORE ID</td>
+             <td>Date Recived</td> 
+             <td>Date payment process</td>
+          </tr>
+          <tr>
+            <td><input type="text" width="100%"></td>
+            <td><input type="text" width="100%"></td>
+            <td><input type="text" width="100%"></td>
+          </tr>
+        </table>
+
+    </form>
+</body>
+</html>
