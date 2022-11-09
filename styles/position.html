@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+           
+            background-color: aqua;
+            width: 500px;
+            height: 500px;
+        }
+        .child{
+            position: static;
+            width: 200px;
+            height: 200px;
+            background-color: darkcyan;
+            left: 100px;
+            top: 100px;
+        }
+        .parent1{
+           
+           background-color: aqua;
+           width: 500px;
+           height: 500px;
+       }
+       .child1{
+           position: relative;
+           width: 200px;
+           height: 200px;
+           background-color: darkcyan;
+           left: 100px;
+           top: 100px;
+       }
+       .parent2{
+           
+           background-color: aqua;
+           width: 500px;
+           height: 500px;
+       }
+       .child2{
+           position: absolute;
+           width: 200px;
+           height: 200px;
+           background-color: darkcyan;
+           left: 100px;
+           top: 1300px;
+       }
+       .parent3{
+           
+           background-color: aqua;
+           width: 500px;
+           height: 500px;
+       }
+       .child3{
+           position: fixed;
+           width: 200px;
+           height: 200px;
+           background-color: darkcyan;
+           top: 10px;
+          
+       }
+       .parent4{
+           
+           background-color: aqua;
+           width: 500px;
+           height: 500px;
+           
+       }
+       .child4{
+           position: sticky;
+           width: 200px;
+           height: 200px;
+           background-color: darkcyan;
+           top: 10px;
+          
+          
+       }
+
+    </style>
+</head>
+<body>
+    <!-- static: every element has a static position by default, so the element will stick to the normal page flow. So if there is a left/right/top/bottom/z-index set then there will be no effect on that element.
+
+
+relative: an element’s original position remains in the flow of the document, just like the static value. But now left/right/top/bottom/z-index will work. The positional properties “nudge” the element from the original position in that direction.
+
+absolute: the element is removed from the flow of the document and other elements will behave as if it’s not even there whilst all the other positional properties will work on it.
+
+fixed: the element is removed from the flow of the document like absolutely positioned elements. In fact they behave almost the same, only fixed positioned elements are always relative to the document, not any particular parent, and are unaffected by scrolling.
+
+sticky: the element is treated like a relative value until the scroll location of the viewport reaches a specified threshold, at which point the element takes a fixed position where it is told to stick.
+
+inherit: the position value doesn’t cascade, so this can be used to specifically force it to, and inherit the positioning value from its parent.
+Absolute --><br><br><br><br><br><br><br><br><br><br>
+
+
+<!-- static: every element has a static position by default, so the element will stick to the normal page flow. So if there is a left/right/top/bottom/z-index set then there will be no effect on that element. -->
+<div class="parent">
+    parent
+    <div class="child">
+        static
+    </div>
+</div>
+
+
+
+<!-- relative: an element’s original position remains in the flow of the document, just like the static value. But now left/right/top/bottom/z-index will work. The positional properties “nudge” the element from the original position in that direction. -->
+
+
+
+<br>
+<div class="parent1">
+    parent
+    <div class="child1">
+        relative
+    </div>
+</div>
+
+
+
+<!-- absolute: the element is removed from the flow of the document and other elements will behave as if it’s not even there whilst all the other positional properties will work on it. -->
+
+<br>
+<div class="parent2">
+    parent
+    <div class="child2">
+        absolute
+    </div>
+</div>
+
+
+<!-- 
+fixed: the element is removed from the flow of the document like absolutely positioned elements. In fact they behave almost the same, only fixed positioned elements are always relative to the document, not any particular parent, and are unaffected by scrolling. -->
+<br>
+<div class="parent3">
+    parent
+    <div class="child3">
+        fixed
+    </div>
+</div>
+<br>
+
+<!-- sticky: the element is treated like a relative value until the scroll location of the viewport reaches a specified threshold, at which point the element takes a fixed position where it is told to stick. -->
+
+<div class="parent4">
+    parent
+    <div class="child4">
+        sticky
+        <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur porro, laboriosam, illo distinctio, illum doloremque sequi quod dicta mollitia excepturi velit natus aperiam sed commodi ad repellendus maiores molestias soluta?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur porro, laboriosam, illo distinctio, illum doloremque sequi quod dicta mollitia excepturi velit natus aperiam sed commodi ad repellendus maiores molestias soluta?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur porro, laboriosam, illo distinctio, illum doloremque sequi quod dicta mollitia excepturi velit natus aperiam sed commodi ad repellendus maiores molestias soluta?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur porro, laboriosam, illo distinctio, illum doloremque sequi quod dicta mollitia excepturi velit natus aperiam sed commodi ad repellendus maiores molestias soluta?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur porro, laboriosam, illo distinctio, illum doloremque sequi quod dicta mollitia excepturi velit natus aperiam sed commodi ad repellendus maiores molestias soluta?
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
