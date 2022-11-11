@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0%;
+        }
+
+        #test1 {
+            display: none;
+            background-color: red;
+            color: black;
+            width: 200px;
+            height: 200px;
+        }
+
+        .test_in {
+            display: inline;
+            color: black;
+            background-color: rgb(129, 127, 123);
+
+        }
+
+        .test2 {
+            display: block;
+            background-image: linear-gradient(red, black);
+            width: 100%;
+            height: 320px;
+
+        }
+
+        .test2_in {
+            display: inline-block;
+            background-image: linear-gradient(rgb(0, 34, 255), black);
+            width: 50px;
+            height: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="test1">
+        <div class="test_in">one</div>
+        <div class="test_in">two</div>
+        <div class="test_in">three</div>
+        <div class="test_in">four</div>
+        <div class="test_in">five</div>
+        <div class="test_in">one</div>
+        <div class="test_in">two</div>
+        <div class="test_in">three</div>
+        <div class="test_in">four</div>
+        <div class="test_in">five</div>
+    </div><br><br>
+
+    <div class="test2">
+        <div class="test2_in">one</div>
+        <div class="test2_in">rwo</div>
+        <div class="test2_in">three</div>
+        <div class="test2_in">four</div>
+        <div class="test2_in">five</div>
+        <div class="test2_in">six</div>
+        <div class="test2_in">seven</div>
+        <div class="test2_in">eight</div>
+        <div class="test2_in">nine</div>
+        <div class="test2_in">ten</div>
+    </div>
+    <!-- <div  onclick="but()">display me</div>
+    <script>
+        function but() {
+             var a=document.getElementById("test1");
+            if (a.style.display==="none") {
+                a.style.display = "block"
+            }
+            else {
+                a.style.display = "none"
+
+            }
+        }
+    </script> -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Dscendent combinator 
+        space is used to apply descendent combinator*/
+        .des p {
+            background-color: red;
+        }
+
+        /* Child combinator 
+        increasing arrow (>) is used to apply child combinator*/
+        .child>p {
+            background-color: darkmagenta;
+        }
+
+        /* adjescent combinator 
+        plus  (+) is used to apply adjescent combinator*/
+        .ad + h1 {
+            background-color: deeppink;
+        }
+         /* general combinator 
+        tild  (~) is used to apply general combinator*/
+        .gen ~ p{
+            background-color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="des">
+        <p>i am para1</p>
+        <p>i am para2</p>
+        <section>
+            <p>inside section first</p>
+            <p>inside section second</p>
+        </section>
+
+    </div>
+    <br>
+
+
+
+    <div class="child">
+        <p> first child </p>
+        <p> second child</p>
+        <section>
+            <p>inside section first</p>
+            <p>inside section second</p>
+        </section>
+        <p>after section</p>
+    </div>
+    <br>
+
+
+    <div class="ad">
+        i am adder
+
+    </div>
+    <h1>now i am just sibling</h1>
+    <p>i am slicer</p>
+    <p>i am screwer</p>
+
+
+    <div class="gen">
+        i am general
+    </div>
+    <p>i am general's  first sibling</p>
+    <p>i am general's  second sibling</p>
+    <p>i am general's  third sibling</p>
+</body>
+
+</html>
